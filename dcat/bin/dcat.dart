@@ -17,9 +17,9 @@ Future<void> main(List<String> arguments) async {
   else {
     File file = File(arguments[1]);
     if(await file.exists()) {
-      Directory dir = new Directory("/workspace/trash/");
+      Directory dir = new Directory("/workspace/02_02_dcat/trash/");
       dir.create();
-      file.copy("/workspace/personal_dcat/trash/${arguments[1]}");
+      file.copy("/workspace/02_02_dcat/trash/${arguments[1]}");
       file.delete();
       }
   }
